@@ -5,7 +5,7 @@ from datasets import load_dataset
 
 ds = load_dataset("greengerong/leetcode")
 df = ds["train"].to_pandas()
-print("✅ Raw dataset loaded:", df.shape)
+print("Raw dataset loaded:", df.shape)
 print(df.head())
 
 train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
